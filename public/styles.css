@@ -1,6 +1,7 @@
 body {
-  font-family: Helvetica, Arial, sans-serif; }
-
+  font-family: Helvetica, Arial, sans-serif;
+  background-image:url(http://i67.tinypic.com/5qru9_th.jpg);
+  background-size:cover; }
 h1 {
   color: #990033;
   font: 32px/1 Helvetica, Arial, sans-serif; }
@@ -81,3 +82,13 @@ nav a.current {
 
 .centered {
   text-align: center; }
+
+  #imagen1{
+  width:300px;
+  height:200px;
+  border:solid 10px black;
+  margin:auto;
+  background-image:url(http://i.imgur.com/pxqmntl.jpg);
+  background-size:cover;
+
+}
