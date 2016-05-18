@@ -24,7 +24,6 @@ pl0 = (function() {
       Error.captureStackTrace(this, peg$SyntaxError);
     }
   }
-
   peg$subclass(peg$SyntaxError, Error);
 
   function peg$parse(input) {
@@ -40,25 +39,25 @@ pl0 = (function() {
         peg$c1 = function(cD, vD, fD, st) {
                     let constants = cD? cD : [];
                     let variables = vD? vD : [];
-                    return { 
-                      type: 'BLOCK', 
-                      constants: constants, 
-                      variables: variables, 
-                      functions: fD, 
+                    return {
+                      type: 'BLOCK',
+                      constants: constants,
+                      variables: variables,
+                      functions: fD,
                       main: st
                     };
                   },
         peg$c2 = function(id, n, rest) {
                                   let r = rest.map( ([_, id, __, nu]) => [id.value, nu.value] );
-                                  return [[id.value, n.value]].concat(r) 
+                                  return [[id.value, n.value]].concat(r)
                                 },
-        peg$c3 = function(id, rest) { 
+        peg$c3 = function(id, rest) {
                               let r = rest.map( ([_, id]) => id.value );
-                              return [id.value].concat(r) 
+                              return [id.value].concat(r)
                             },
         peg$c4 = function(id, p1, r, b) {
                 let params = p1? [p1] : [];
-                params = params.concat(r.map(([_, p]) => p)); 
+                params = params.concat(r.map(([_, p]) => p));
                 //delete b.type;
                 return Object.assign({
                   type: 'FUNCTION',
@@ -104,7 +103,7 @@ pl0 = (function() {
         peg$c14 = function(f, a, r) {
                    let t = [];
                    if (a) t.push(a);
-                   return { 
+                   return {
                      type: 'CALL',
                      func: f,
                      arguments: t.concat(r.map(([_, exp]) => exp))
@@ -144,7 +143,7 @@ pl0 = (function() {
         peg$c46 = { type: "literal", value: "<", description: "\"<\"" },
         peg$c47 = ">",
         peg$c48 = { type: "literal", value: ">", description: "\">\"" },
-        peg$c49 = function(op) { 
+        peg$c49 = function(op) {
                        return op;
                     },
         peg$c50 = "if",
@@ -169,13 +168,13 @@ pl0 = (function() {
         peg$c69 = { type: "class", value: "[a-zA-Z_]", description: "[a-zA-Z_]" },
         peg$c70 = /^[a-zA-Z_0-9]/,
         peg$c71 = { type: "class", value: "[a-zA-Z_0-9]", description: "[a-zA-Z_0-9]" },
-        peg$c72 = function(id) { 
-                      return { type: 'ID', value: id }; 
+        peg$c72 = function(id) {
+                      return { type: 'ID', value: id };
                     },
         peg$c73 = /^[0-9]/,
         peg$c74 = { type: "class", value: "[0-9]", description: "[0-9]" },
-        peg$c75 = function(digits) { 
-                      return { type: 'NUM', value: parseInt(digits, 10) }; 
+        peg$c75 = function(digits) {
+                      return { type: 'NUM', value: parseInt(digits, 10) };
                     },
 
         peg$currPos          = 0,
