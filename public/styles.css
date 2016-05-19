@@ -31,6 +31,10 @@ nav {
     color: white; }
     nav a:hover {
       background: #111111; }
+      
+.example {
+  color: #FFF;
+}
 
 p {
   font: 13px/1.4 Helvetica, Arial, sans-serif; }
