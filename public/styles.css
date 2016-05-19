@@ -47,12 +47,12 @@ nav a.current {
   font-weight: bold;
   margin: 20px;
   background: #ffccdd;
-  color: #990033;
+  color: #FFF;
   border: 1px solid #990033; }
 
 #like p {
   font-weight: bold;
-  color: #990033; }
+  color: #FFF; }
 #like input {
   background: #990033 url(/images/like.png) 0 2px no-repeat;
   border: #660022 1px solid;
@@ -67,7 +67,7 @@ nav a.current {
   height: 20px;
   padding: 5px; }
   .loadfile button, .loadfile input {
-    color: #444444;
+    color: #FFF;
     float: left;
     list-style: none;
     display: inline;
