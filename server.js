@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/lib'));
 app.use(express.static(__dirname + '/tests'));
 
 app.get('/', (request, response) => {
-  response.render('index', {title: 'CSV con ajax'});
+  response.render('index', {title: 'Proyecto'});
 });
 
 app.listen(app.get('port'), () => {
