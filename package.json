@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/alu0100819182/proyecto-luisdaomar#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-ejs-layouts": "~1.1.0"
   }
 }
