@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>pegjs</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
-    <script src="./jquery.min.js"></script>
+  <title>pegjs</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+  <script src="./jquery.min.js"></script>
 	<script src="pl0.js"></script>
 	<script src="main.js"></script>
+  <script src="semantic.js"></script>
   </head>
   <body>
 
@@ -20,7 +21,7 @@
     <tbody><tr>
       <td>
         <form method="post">
-          <textarea id="input" name="input" autofocus="" cols="40" rows="4">a = 3-2-1</textarea>
+          <textarea class= "drop_zone" id="input" name="input" autofocus="" cols="40" rows="4">a = 3-2-1</textarea>
           <br>
         </form>
 
@@ -38,13 +39,13 @@
     </th>
   </tbody></table>
   <p></p>
-  <div class="output">
-    <pre><span id="output"></span> <!-- Output goes here! -->
-    </pre>
-  </div>
+  <div class="output" id="finaltable">
+      <table>
+        <th>
+         <textarea id = "tablaResultado" autofocus="" cols = "90" rows = "15"></textarea>
+       </th>
+       </table>
+   </div>
 </div>
 
 </body></html>
-
-
-
