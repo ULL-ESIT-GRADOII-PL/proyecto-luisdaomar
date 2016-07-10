@@ -1,18 +1,22 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const path = require('path');
+const expressLayouts = require('express-ejs-layouts');
 
 app.set('port', (process.env.PORT || 5000));
-
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
 app.use(express.static(__dirname + '/public'));
 
-// views is directory for all template files
-app.set('views', __dirname + '/Views');
-app.set('view engine', 'erb');
-/*
-app.get('/', function(request, response) {
-  response.render('index');
+app.get('/', (request, response) => {
+  response.render('index', {title: 'CSV con ajax'});
 });
-*/
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+
+app.get('/csv', (request, response) => {
+  response.send ({"rows": calculate(request.query.input)});
+});
+
+app.listen(app.get('port'), () => {
+    console.log(`Node app is running at localhost: ${app.get('port')}` );
 });
