@@ -23,6 +23,6 @@
   "dependencies": {
     "express": "^4.13.4",
     "express-ejs-layouts": "~1.1.0",
-    "ejs": "*",
+    "ejs": "*"
   }
 }
