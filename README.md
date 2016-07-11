@@ -1,7 +1,13 @@
-# Sinatra example Using PEG.js and DataMapper
+#Proyecto Final de Procesadores de lenguajes
 
-* [PEG.js](http://pegjs.majda.cz/)
-* [DataMapper](http://datamapper.org/docs/)
-* [PL0 Grammar. Wikipedia](http://en.wikipedia.org/wiki/Recursive_descent_parser)
-* [ULL-ETSII-GRADO-PL-13-14](https://plus.google.com/u/0/communities/107031495100582318205)
-* [PL Entorno virtual de docencia institucional 2013/2014 ULL](http://campusvirtual.ull.es/1314/course/view.php?id=1104)
+* Este proyecto consiste en la realización de una analizador de lenguajes sintáctico PL0, además de la aplicación de tecnologías vistas durante el curso
+
+* [Campus Virtual](https://campusvirtual.ull.es/1516/course/view.php?id=178)
+* [Repo de la Organizacion](https://github.com/ULL-ESIT-GRADOII-PL/proyecto-luisdaomar)
+* [Repod de trabajo](https://github.com/alu0100819182/proyecto-luisdaomar)
+* [Despliegue de Heroku](https://pegjschirche.herokuapp.com/)
+
+##Autores del trabajo
+
+* Luis David Padilla Martín
+* Omar Adolfo Álvarez Hernández 
