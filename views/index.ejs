@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>pegjs</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+  <script src="./jquery.min.js"></script>
+	<script src="pl0.js"></script>
+	<script src="main.js"></script>
+  <script src="semantic.js"></script>
+  </head>
+  <body>
+
+    <h1>Analizador de PL0 ampliado usando PEG.js</h1>
+<div id="content">
+  <p class="loadfile">
+    <input type="file" id="examples">
+  </p>
+  <p>
+  </p>
+  <table>
+    <tbody><tr>
+      <td>
+        <form method="post">
+          <textarea class= "drop_zone" id="input" name="input" autofocus="" cols="40" rows="4">Introduzca aqui el código</textarea>
+          <br>
+        </form>
+
+      </td>
+      <td><button id="parse" type="button">parse</button></td>
+    </tr>
+    <th>
+      <div class="example">
+        Click para cargar ejemplos:
+        <button class ="example" type="button">input0</button>
+        <button class ="example" type="button">input1</button>
+        <button class ="example" type="button">input2</button>
+        <button class ="example" type="button">input3</button>
+        <button class ="example" type="button">input4</button>
+        <button class ="example" type="button">input5</button>
+        <button class ="example" type="button">inputcompleto</button>
+      </div>
+    </th>
+  </tbody></table>
+  <p></p>
+  <div class="output" id="finaltable">
+      <table>
+        <th>
+         <textarea id = "tablaResultado" autofocus="" cols = "90" rows = "15"></textarea>
+       </th>
+       </table>
+   </div>
+</div>
+
+</body></html>

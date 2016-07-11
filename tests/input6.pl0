@@ -1,0 +1,4 @@
+struct empleado {
+    int  edad;
+    char sexo;
+}
